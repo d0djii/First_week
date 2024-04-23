@@ -35,6 +35,8 @@ body {
     margin: auto;
 }
 
+
+
 .navigation_link {
     margin-right: 18px;
     font-weight: 600;
@@ -88,6 +90,7 @@ body {
 }
 .main_box img {
     margin-top: 20px;
+    margin-left: 25px;
 }
 
 .footer_header {
@@ -111,6 +114,7 @@ body {
 
 .footer_box p{
     font-size: 11px;
+    font-weight: 400px;
     padding-top: 8px;
     line-height: 13.83px;
 }
@@ -166,6 +170,7 @@ body {
 }
 
 .form_container p {
+    font-weight: 600px;
     font-size: 15px;
     color: #000;
 }
@@ -190,8 +195,6 @@ body {
 
 .main_form_button {
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
 }
 
 .main_form_button button {
@@ -208,4 +211,240 @@ body {
 
 .col {
     color: #E02622;
+}
+
+
+
+
+
+
+
+.body {
+    width: 100%;
+    background-color: #DDDDDD;
+}
+
+.header_profile {
+    max-width: 393px;
+    padding: 0 28px;
+    padding-top: 32px;
+    display: flex;
+}
+
+.header_profile_text {
+    text-align: center;
+    margin: auto;
+}
+
+.header_profile_text p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -28px;
+}
+
+.main_profile_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 37px;
+    justify-content: center;
+}
+
+.main_profile_box {
+    width: 99%;
+    height: 107px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+}
+.main_inside_profile {
+    margin-left: 20px;
+}
+.main_inside_profile h2 {
+    font-size: 18px;
+
+}
+
+.main_inside_profile p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    margin-top: -9px;
+}
+
+.main_profile_box img {
+    margin-left: 26px;
+    margin-top: 25px;
+}
+
+.navigation_profile_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 15px;
+
+    justify-content: center;
+}
+
+.navigation_profile_box {
+    width: 99%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.number_profile {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.number_profile h1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000;
+    margin-top: -3px;
+}
+
+.number_profile button {
+    width: 67px;
+    height: 27px;
+    color: #fff;
+    font-family: 'Source Code Pro';
+    border-radius: 11px;
+    border: 0px;
+    margin-left: 20px;
+    background-color: #30B700;
+}
+
+.navigation_order_box {
+    display: flex;
+}
+
+.navigation_order_inside {
+    margin-left: 14px;
+}
+.navigation_order_inside h2 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+.navigation_order_inside p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.navigation_order_box img {
+    margin-left: 31px;
+    margin-top: 5px;
+}
+
+.price_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 27px;
+}
+.inside_price {
+    display: flex;
+    justify-content: space-between;
+}
+.inside_price p {
+    text-align: 12px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 89%;
+    text-align: center;
+  }
+
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 2px;
+  }
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+input[type="search"] {
+    background-color: #E8E8E8;
+    width: 314px;
+    height: 49px;
+    border-radius: 30px;
+    padding-left: 50px; 
+    box-sizing: border-box; 
+    border: none;
+    outline: none;
+  }
+  input[type="search"]::placeholder {
+    color: #666; 
+  }
+  .search-icon {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -16em;
+}
+.center {
+    justify-content: center;
+  }
+
+.manager_button button{
+    width: 145px;
+    height: 26px;
+    background-color: #E02622;
+    border: 0px;
+    cursor: pointer;
+    font-family: "Source Code Pro";
+    font-size: 13px; 
+    color: #fff;
+    border-radius: 11px;
+    margin-top: 40px;
+}
+.manager_button {
+    text-align: center;
+}
+
+.info_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 27px;
+    padding-bottom: 8px;
+}
+
+.info_container p {
+    color: #ADADAF;
+}
+
+.modal_box {
+    display: flex;
 }
