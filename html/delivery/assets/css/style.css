@@ -111,7 +111,6 @@ body {
 
 .footer_box p{
     font-size: 11px;
-    font-weight: 400px;
     padding-top: 8px;
     line-height: 13.83px;
 }
@@ -167,7 +166,6 @@ body {
 }
 
 .form_container p {
-    font-weight: 600px;
     font-size: 15px;
     color: #000;
 }
