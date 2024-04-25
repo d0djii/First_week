@@ -10,27 +10,22 @@ import (
 )
 
 func main() {
-	// Получаем путь к папке assets
 	assetsDir := "assets"
 	if wd, err := os.Getwd(); err == nil {
 		assetsDir = filepath.Join(wd, "assets")
 	}
 
-	// Создаем новый экземпляр Gin
 	r := gin.Default()
 
-	// Обработчики для различных страниц
-	r.GET("/", indexRedirectHandler) // Перенаправление с / на /index.html
+	r.GET("/", indexRedirectHandler)
 	r.GET("/index.html", indexHandler)
 	r.GET("/register/login.html", loginHandler)
 	r.GET("/register/register.html", registerHandler)
 	r.GET("/profile.html", profileHandler)
 	r.GET("/cart.html", cartHandler)
 
-	// Обработчик для статических файлов (стилей)
 	r.Static("/assets", assetsDir)
 
-	// Настройка сервера
 	r.Run(":8080")
 }
 
@@ -59,7 +54,6 @@ func cartHandler(c *gin.Context) {
 }
 
 func renderTemplate(c *gin.Context, tmpl string, data interface{}) {
-	// Ваш код для рендеринга HTML-шаблона
 	t, err := template.ParseFiles(tmpl)
 	if err != nil {
 		c.String(http.StatusInternalServerError, err.Error())
