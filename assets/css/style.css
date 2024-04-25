@@ -1,0 +1,450 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    
+    font-family: 'Source Code Pro';
+}
+.header_container {
+    max-width: 393px;
+    margin: auto;
+    display: flex;
+    padding: 0 15px;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.header_box a {
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.navigation_container {
+    max-width: 393px;
+    margin: auto;
+    display: flex;
+    padding: 0 15px;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.navigation_box {
+    margin: auto;
+}
+
+
+
+.navigation_link {
+    margin-right: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation_box a:hover {
+    color: #E02622;
+}
+
+.col {
+    color: #E02622;
+}
+
+.main_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 27px;
+}
+.main_box {
+    display: flex;
+    width: 100%;
+}
+.main_inside_content h1 {
+    font-size: 17px;
+    color: #000;
+    margin-left: 24px;
+}
+
+.main_inside_content p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.83px;
+    margin-left: 24px;
+}
+.main_inside_content button {
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    width: 64px;
+    font-family: "Source Code Pro";
+    height: 29px;
+    color: #000;
+    border: 0px;
+    margin-left: 24px;
+    font-weight: 600;
+}
+
+.main_box img {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.footer_header {
+    background-color: #E8E8E8;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_box {
+    margin: auto;
+}
+
+.footer_box p{
+    font-size: 11px;
+    font-weight: 400px;
+    padding-top: 8px;
+    line-height: 13.83px;
+}
+
+.copy {
+    font-size: 11px;
+    text-align: center;
+}
+
+.header_form_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 32px;
+    padding-top: 32px;
+}
+
+.header_2 {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.termin_box {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(161,161,161,1);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(161,161,161,1);
+    box-shadow: 0px 0px 11px 0px rgba(161,161,161,1);
+}
+
+.form_link {
+    margin-top: 71px;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.menu_link {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 23px;
+    margin-left: 30px;
+}
+
+.form_container {
+    max-width: 393px;
+    margin: auto;
+    margin-top: 108px;
+    padding: 0 47px;
+}
+
+.form_container p {
+    font-weight: 600px;
+    font-size: 15px;
+    color: #000;
+}
+
+.underline-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.underline-input input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999; 
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-bottom-color 0.3s; 
+}
+
+.underline-input input:focus {
+    border-bottom-color: #007bff; 
+}
+
+.main_form_button {
+    text-align: center;
+}
+
+.main_form_button button {
+    width: 199px;
+    height: 72px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #E12624;
+    border: 0px;
+    font-size: 20px;
+    font-family: 'Source Code Pro';
+    border-radius: 36px;
+}
+
+.col {
+    color: #E02622;
+}
+
+
+
+
+
+
+
+.body {
+    width: 100%;
+    background-color: #DDDDDD;
+}
+
+.header_profile {
+    max-width: 393px;
+    padding: 0 28px;
+    padding-top: 32px;
+    display: flex;
+}
+
+.header_profile_text {
+    text-align: center;
+    margin: auto;
+}
+
+.header_profile_text p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -28px;
+}
+
+.main_profile_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 37px;
+    justify-content: center;
+}
+
+.main_profile_box {
+    width: 99%;
+    height: 107px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+}
+.main_inside_profile {
+    margin-left: 20px;
+}
+.main_inside_profile h2 {
+    font-size: 18px;
+
+}
+
+.main_inside_profile p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    margin-top: -9px;
+}
+
+.main_profile_box img {
+    margin-left: 26px;
+    margin-top: 25px;
+}
+
+.navigation_profile_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 15px;
+
+    justify-content: center;
+}
+
+.navigation_profile_box {
+    width: 99%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.number_profile {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.number_profile h1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000;
+    margin-top: -3px;
+}
+
+.number_profile button {
+    width: 67px;
+    height: 27px;
+    color: #fff;
+    font-family: 'Source Code Pro';
+    border-radius: 11px;
+    border: 0px;
+    margin-left: 20px;
+    background-color: #30B700;
+}
+
+.navigation_order_box {
+    display: flex;
+}
+
+.navigation_order_inside {
+    margin-left: 14px;
+}
+.navigation_order_inside h2 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+.navigation_order_inside p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.navigation_order_box img {
+    margin-left: 31px;
+    margin-top: 5px;
+}
+
+.price_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 27px;
+}
+.inside_price {
+    display: flex;
+    justify-content: space-between;
+}
+.inside_price p {
+    text-align: 12px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 89%;
+    text-align: center;
+  }
+
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 2px;
+  }
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+input[type="search"] {
+    background-color: #E8E8E8;
+    width: 314px;
+    height: 49px;
+    border-radius: 30px;
+    padding-left: 50px; 
+    box-sizing: border-box; 
+    border: none;
+    outline: none;
+  }
+  input[type="search"]::placeholder {
+    color: #666; 
+  }
+  .search-icon {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -16em;
+}
+.center {
+    justify-content: center;
+  }
+
+.manager_button button{
+    width: 145px;
+    height: 26px;
+    background-color: #E02622;
+    border: 0px;
+    cursor: pointer;
+    font-family: "Source Code Pro";
+    font-size: 13px; 
+    color: #fff;
+    border-radius: 11px;
+    margin-top: 40px;
+}
+.manager_button {
+    text-align: center;
+}
+
+.info_container {
+    max-width: 393px;
+    margin: auto;
+    padding: 0 27px;
+    padding-bottom: 8px;
+}
+
+.info_container p {
+    color: #ADADAF;
+}
+
+.modal_box {
+    display: flex;
+}
