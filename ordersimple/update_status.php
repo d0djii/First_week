@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $new_status = $_POST['new_status'];
     
     // Обновление статуса заказа в базе данных
-    $conn = new mysqli('localhost', 'root', '', 'delivery');
+    $conn = new mysqli('localhost', 'root', '', 'foodsys');
     $sql = "UPDATE purchase SET status_id = $new_status WHERE purchaseid = $purchase_id";
     $result = $conn->query($sql);
     

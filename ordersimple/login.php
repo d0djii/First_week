@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $connectMySQL = new mysqli('localhost', 'root', '', 'delivery');
+    $connectMySQL = new mysqli('localhost', 'root', '', 'foodsys');
 
     $phone_number = $_POST['phone_number'];
     $password = $_POST['password'];

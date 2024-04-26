@@ -5,7 +5,7 @@
     <h1 class="page-header text-center">Меню</h1>
     <ul class="nav nav-tabs">
         <?php
-            $conn = new mysqli('localhost', 'root', '', 'delivery');
+            $conn = new mysqli('localhost', 'root', '', 'foodsys');
 
             $sql="select * from category order by categoryid asc limit 1";
             $fquery=$conn->query($sql);

@@ -25,7 +25,7 @@ include('navbar.php');
         <tbody>
             <?php 
             // Открываем соединение с базой данных
-            $conn = new mysqli('localhost', 'root', '', 'delivery');
+            $conn = new mysqli('localhost', 'root', '', 'foodsys');
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }

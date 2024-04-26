@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Апр 26 2024 г., 11:18
+-- Время создания: Апр 26 2024 г., 10:49
 -- Версия сервера: 10.4.32-MariaDB
 -- Версия PHP: 8.2.12
 
@@ -18,10 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `delivery`
+-- База данных: `foodsys`
 --
-CREATE DATABSE delivery
-USE delivery
+
+DROP DATABASE IF EXISTS foodsys;
+CREATE DATABASE foodsys;
+USE foodsys;
+
 -- --------------------------------------------------------
 
 --
@@ -39,7 +42,9 @@ CREATE TABLE `category` (
 
 INSERT INTO `category` (`categoryid`, `catname`) VALUES
 (1, 'ПИЦЦА'),
-(2, 'СОУСЫ');
+(2, 'СОУСЫ'),
+(11, 'ЧИЧА'),
+(12, 'ЧИЧА2');
 
 -- --------------------------------------------------------
 
@@ -76,7 +81,8 @@ INSERT INTO `product` (`productid`, `categoryid`, `productname`, `price`, `photo
 (1, 1, 'ПИЦЦА ЧИКАГО', 535, 'upload/1-1.jpg'),
 (2, 1, 'ПИЦЦА КОЛЬЯРИ', 580, 'upload/2.jpg'),
 (3, 1, 'ПИЦЦА ПЕППЕРОНИ', 600, 'upload/3.jpg'),
-(4, 1, 'ПИЦЦА ЭЛЕОНОРА', 580, 'upload/4.jpg');
+(4, 1, 'ПИЦЦА ЭЛЕОНОРА', 580, 'upload/4.jpg'),
+(223, 11, 'ЧИЧА', 1111, '');
 
 -- --------------------------------------------------------
 
@@ -92,7 +98,7 @@ CREATE TABLE `purchase` (
   `comment` varchar(150) DEFAULT NULL,
   `address` varchar(50) NOT NULL,
   `status_id` int(11) DEFAULT 0,
-  `how_fast` varchar(10) DEFAULT NULL
+  `how_fast` varchar(10)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -100,7 +106,6 @@ CREATE TABLE `purchase` (
 --
 
 INSERT INTO `purchase` (`purchaseid`, `customer`, `total`, `date_purchase`, `comment`, `address`, `status_id`, `how_fast`) VALUES
-(0, 'я крутой', 2830, '2024-04-26 14:16:23', 'Я кртуой', 'я крутой', 4, '20:30'),
 (21, 'Дмитрий', 2226, '2024-04-26 10:14:28', 'мне по-кафу сделайсе)', 'ул. Пушкино, д.33', 0, NULL),
 (24, 'sadfdsfsdfsdfsdfsdfsfs', 1715, '2024-04-26 11:16:47', '', 'ул. Пушкино, д.12', 4, NULL);
 
@@ -143,10 +148,7 @@ INSERT INTO `purchase_detail` (`pdid`, `purchaseid`, `productid`, `quantity`) VA
 (37, 23, 2, 1),
 (38, 24, 2, 1),
 (39, 24, 3, 1),
-(40, 24, 1, 1),
-(41, 0, 2, 2),
-(42, 0, 3, 1),
-(43, 0, 1, 2);
+(40, 24, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -194,8 +196,7 @@ INSERT INTO `users` (`id`, `first_name`, `phone_number`, `password`, `email`, `r
 (0, 'Дмитрий', '79821860800', '123123', 'sdsadsda@mail.ru', 'cook'),
 (1, 'asdasdasdada', '123123123', '123123', 'dkponich@gmail.com', 'manager'),
 (23, 'sadfdsfsdfsdfsdfsdfsfs', '12312312312', '123123', 'adsfdfsdfsdfdsf@mail.ru', 'user'),
-(24, 'Курьер', '123', '123123', 'privet@mail.ru', 'courier'),
-(25, 'я крутой', '1111', '1111', 'dfkdsfksd@mail.ru', 'user');
+(24, 'Курьер', '123', '123123', 'privet@mail.ru', 'courier');
 
 --
 -- Индексы сохранённых таблиц
@@ -264,13 +265,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT для таблицы `purchase_detail`
 --
 ALTER TABLE `purchase_detail`
-  MODIFY `pdid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `pdid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

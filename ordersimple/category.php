@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_category'])) {
     // Проверяем, установлено ли название категории
     if(isset($_POST['category_name']) && !empty($_POST['category_name'])) {
         // Открываем соединение с базой данных
-        $conn = new mysqli('localhost', 'root', '', 'delivery');
+        $conn = new mysqli('localhost', 'root', '', 'foodsys');
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_category'])) {
             <tbody>
                 <?php
                     // Открываем соединение с базой данных (необходимо для вывода существующих категорий)
-                    $conn = new mysqli('localhost', 'root', '', 'delivery');
+                    $conn = new mysqli('localhost', 'root', '', 'foodsys');
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                     }

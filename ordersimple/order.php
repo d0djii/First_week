@@ -3,7 +3,7 @@ include('header.php');
 include('navbar.php');
 
 // Establishing database connection
-$conn = new mysqli('localhost', 'root', '', 'delivery');
+$conn = new mysqli('localhost', 'root', '', 'foodsys');
 
 // Check connection
 if ($conn->connect_error) {

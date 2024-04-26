@@ -9,7 +9,7 @@ if ($role == 'user') {
 }
 
 // Создаем подключение к базе данных
-$conn = new mysqli('localhost', 'root', '', 'delivery');
+$conn = new mysqli('localhost', 'root', '', 'foodsys');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
