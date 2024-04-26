@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- База данных: `delivery`
 --
+CREATE DATABSE delivery
+USE delivery
 -- --------------------------------------------------------
 
 --
